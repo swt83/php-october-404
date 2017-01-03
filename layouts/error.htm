@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Error {{ this.page.error_code }}</title>
+
+<meta http-equiv="cache-control" content="no-cache"/>
+<meta http-equiv="content-language" content="en-US"/>
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+
+<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+<style type="text/css">
+    html {
+        background: #605856;
+    }
+    body {
+        font-family: "Abel", sans-serif;
+        font-size: 20px;
+        color: black;
+    }
+    div {
+        margin: 50px auto;
+        width: 500px;
+        text-align: center;
+    }
+    h1 {
+        line-height: 1;
+        font-size: 10em;
+        font-weight: 900;
+        color: #A39A92;
+        margin: 0;
+    }
+    h2 {
+        margin: 0;
+        font-size: 2em;
+        text-transform: uppercase;
+        color: #D0CCD0;
+    }
+    p {
+        margin: 0 0 2em 0;
+        line-height: 1.5;
+        color: #A39A92;
+    }
+    a {
+        background: #483D3F;
+        color: #D0CCD0;
+        text-transform: uppercase;
+        font-weight: 900;
+        text-decoration: none;
+        padding: 7px 20px;
+    }
+</style>
+
+</head>
+<body>
+
+<div>
+    <hgroup>
+        <h1>{{ this.page.error_code }}</h1>
+        <h2>{{ this.page.error_name }}</h2>
+    </hgroup>
+    <p>Sorry, something went wrong.</p>
+    <p><a href="{{ 'home'|page }}">Go Home</a></p>
+</div>
+
+</body>
+</html>
